@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edg.ROBOT.mob"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:icon="@drawable/robotbrain"
+        android:label="iRobot" 
+        android:debuggable="true">
+        <activity
+            android:name=".ANDROID_ROBOT_ARMActivity"
+            android:label="ANDROID ROBOT ARM" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!--  MANUAL CONTROL ACTIVITY -->
+        <activity 
+            android:name=".ManualControl"
+            android:label="Manual Control">
+            <intent-filter>
+                <action android:name="edg.ROBOT.MANUALCONTROL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+       </activity>    
+ 
+       <!--  RESET STATE ACTIVITY --> 
+       <activity 
+            android:name=".ResetState"
+            android:label="Reset State">
+            <intent-filter>
+                <action android:name="edg.ROBOT.RESETSTATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+       </activity>
+        
+        <!--  SECUENCE  ACTIVITY --> 
+       <activity 
+            android:name=".AutomatedSecuence"
+            android:label="Automated Secuence">
+            <intent-filter>
+                <action android:name="edg.ROBOT.AUTOMATEDSECUENCE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+       </activity>
+        
+        
+       <!--  ROBOT STATE BROWSE ACTIVITY --> 
+       <activity 
+            android:name=".CurrentState"
+            android:label="Current State">
+            <intent-filter>
+                <action android:name="edg.ROBOT.CURRENTSTATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+       </activity>
+ 
+       <!--  CALIBRATION ROBOT ARM ACTIVITY --> 
+       <activity 
+            android:name=".Calibration"
+            android:label="Calibration">
+            <intent-filter>
+                <action android:name="edg.ROBOT.CALIBRATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+       </activity>
+ 
+      </application>
+    
+</manifest>

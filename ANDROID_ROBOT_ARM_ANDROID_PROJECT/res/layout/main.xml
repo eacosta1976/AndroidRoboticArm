@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/navy"
+    android:orientation="vertical" >
+   <LinearLayout
+       android:id="@+id/layoutSp7"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+   <!-- MANUAL CONTROL BUTTON -->
+   <LinearLayout
+       android:id="@+id/layout1m"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <Button
+           android:id="@+id/cmdManualControl"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text = "Manual Control" />
+  </LinearLayout>
+  <LinearLayout
+       android:id="@+id/layoutSp0"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+  
+   <!-- RESET STATE BUTTON -->
+    <LinearLayout
+       android:id="@+id/layout2m"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <Button
+           android:id="@+id/cmdResetState"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text = "Reset State" />
+  </LinearLayout>
+  
+    <LinearLayout
+       android:id="@+id/layoutSp1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+    </LinearLayout>
+    
+    
+    <!-- SEQUENCE STATE BUTTON -->
+    <LinearLayout
+       android:id="@+id/layout3m"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <Button
+           android:id="@+id/cmdAutomatedSecuenceActivity"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text = "Execute Automated Sequence" />
+  </LinearLayout>
+   
+    <LinearLayout
+       android:id="@+id/layoutSp2"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   </LinearLayout>
+   
+   <!-- BROWSE STATE BUTTON -->
+   <LinearLayout
+       android:id="@+id/layout4m"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <Button
+           android:id="@+id/cmdBrowseStateMain"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text = "Current State" />
+  </LinearLayout>
+  <LinearLayout
+       android:id="@+id/layoutSp3"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+  <!-- CALIBRATION STATE BUTTON -->
+   <LinearLayout
+       android:id="@+id/layout5m"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <Button
+           android:id="@+id/cmdCalibrationActivity"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text = "Calibrate Robot Arm" />
+  </LinearLayout>
+   
+  
+</LinearLayout>

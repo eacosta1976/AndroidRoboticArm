@@ -1,0 +1,205 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maintable"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/navy">
+
+    <TableRow >
+		 <TextView 
+	          android:layout_height="10px"/>
+	</TableRow>	
+    
+	<TableRow >
+    
+		<TableLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/subtable"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" >
+		   
+		    <!-- HAND -->						
+			<TableRow >
+				<Button
+			        android:id="@+id/cmdHandOpen"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/bullet2" />
+				   
+			    <TextView
+			        android:id="@+id/hand"
+					android:layout_width="170px"
+			        android:layout_height="wrap_content"
+			        android:text="Hand"
+			        android:textSize="20px"			        
+			        android:gravity="center_horizontal"
+			        android:textAppearance="?android:attr/textAppearanceLarge" />				
+		
+				<Button
+			        android:id="@+id/cmdHandClose"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/bullet"/>
+						
+		    </TableRow>		
+		    
+			<TableRow >
+		        <TextView 
+	                 android:layout_height="15px"/>
+	        </TableRow>	
+           
+			<!-- WRIST -->				    		    
+
+			<TableRow >
+				<Button
+			        android:id="@+id/cmdWristDown"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/down" />
+				   
+			    <TextView
+			        android:id="@+id/wrist"
+					android:layout_width="170px"
+			        android:layout_height="wrap_content"
+			        android:text="Wrist"
+			        android:textSize="20px"			        
+			        android:gravity="center_horizontal"
+			        android:textAppearance="?android:attr/textAppearanceLarge" />				
+		
+				<Button
+			        android:id="@+id/cmdWristUp"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/up"/>
+						
+		    </TableRow>			
+					    		
+			<TableRow >
+		        <TextView 
+	                 android:layout_height="15px"/>
+	        </TableRow>	
+           
+			<!-- ELBOW -->	
+			
+			
+			<TableRow >
+				<Button
+			        android:id="@+id/cmdElbowDown"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/down" />
+				   
+			    <TextView
+			        android:id="@+id/elbow"
+					android:layout_width="170px"
+			        android:layout_height="wrap_content"
+			        android:text="Elbow"
+			        android:textSize="20px"			        
+			        android:gravity="center_horizontal"
+			        android:textAppearance="?android:attr/textAppearanceLarge" />				
+		
+				<Button
+			        android:id="@+id/cmdElbowUp"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/up"/>
+						
+		    </TableRow>			
+			
+			<TableRow >
+		        <TextView 
+	                 android:layout_height="15px"/>
+	        </TableRow>	
+           
+			<!-- SHOULDER -->	
+			
+			<TableRow >
+				<Button
+			        android:id="@+id/cmdShoulderUp"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/down"/>
+				
+			    <TextView
+			        android:id="@+id/shoulder"
+					android:layout_width="170px"
+			        android:layout_height="wrap_content"
+			        android:text="Shoulder"
+			        android:textSize="20px"			        
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge" />				
+				
+				<Button
+			        android:id="@+id/cmdShoulderDown"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/up" />
+						
+		    </TableRow>					
+			
+			<TableRow >
+		        <TextView 
+	                 android:layout_height="15px"/>
+	        </TableRow>	
+           
+			<!-- BASE -->				
+						
+			<TableRow >
+				<Button
+			        android:id="@+id/cmdBaseLeft"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/left" />
+				   
+			    <TextView
+			        android:id="@+id/base"
+					android:layout_width="170px"
+			        android:layout_height="wrap_content"
+			        android:text="Base"
+			        android:textSize="20px"
+					android:layout_gravity="center_horizontal"			        
+			        android:textAppearance="?android:attr/textAppearanceLarge" />				
+		
+				<Button
+			        android:id="@+id/cmdBaseRight"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:background="@drawable/right"/>
+						
+		    </TableRow>
+		
+ 	</TableLayout>
+    
+    </TableRow>
+
+	<TableRow >
+		<TextView 
+	        android:layout_height="20px"/>
+	</TableRow>	
+	
+	
+	<TableRow>
+
+	    <TableLayout >
+	        	        
+			<TableRow >
+
+	           	<Button
+			        android:id="@+id/returnBtn"
+			        android:layout_width="75px"
+			        android:layout_height="50px"
+			        android:layout_marginRight="20px"
+			        android:background="@drawable/minus"/>	 	           
+
+		       <TextView
+			       	android:id="@+id/backM"
+			       	android:layout_height="wrap_content"
+			       	android:text="RETURN"
+			       	android:textSize="25px"	
+			       	android:gravity="center"		        
+			       	android:onClick="onClick"
+					android:clickable="true" />			       	        
+	       </TableRow>	       
+	    </TableLayout>
+	</TableRow>
+				
+</TableLayout>

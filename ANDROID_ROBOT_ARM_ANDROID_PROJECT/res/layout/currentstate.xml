@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/navy"    
+    android:orientation="vertical" >
+   
+    <!--  LAYOUT SPACE 0 -->
+   <LinearLayout
+       android:id="@+id/layoutSpace00"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+   
+   <!-- BASE BUTTONS -->
+   <LinearLayout
+       android:id="@+id/layout01"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Base Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[-4 = 4]"/>
+       
+       <EditText
+           android:id="@+id/txtBaseMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />            
+    
+  </LinearLayout>
+  
+   <!-- LAYOUT SPACE 1 -->
+   <LinearLayout
+       android:id="@+id/layoutSpace02"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+  
+   <!-- SHOULDER BUTTONS -->
+   <LinearLayout
+       android:id="@+id/layout03"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+        <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Shoulder Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 4]"/>
+       
+       <EditText
+           android:id="@+id/txtShoulderMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />    
+      
+  </LinearLayout>
+  
+   <!--  LAYOUT SPACE 2 -->
+   <LinearLayout
+       android:id="@+id/layoutSpace04"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+   
+   <!-- ELBOW BUTTONS --> 
+   <LinearLayout
+       android:id="@+id/layout05"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Elbow Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 4]"/>
+       
+       <EditText
+           android:id="@+id/txtElbowMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />              
+    
+  </LinearLayout>
+  
+    <!--  LAYOUT SPACE 3 -->
+   <LinearLayout
+       android:id="@+id/layoutSpace06"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+  
+  <!-- WRIST BUTTONS -->  
+  <LinearLayout
+       android:id="@+id/layout07"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+      <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Wrist Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 5]"/>
+       
+       <EditText
+           android:id="@+id/txtWristMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />             
+    
+  </LinearLayout> 
+  
+   <!--  LAYOUT SPACE 4 -->
+   <LinearLayout
+       android:id="@+id/layoutSpace08"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+  
+  <!-- HAND BUTTONS --> 
+   <LinearLayout
+       android:id="@+id/layout09"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+      <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Hand Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 2]"/>
+       
+       <EditText
+           android:id="@+id/txtHandMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />            
+    
+  </LinearLayout> 
+  
+    <!--  LAYOUT SPACE 5 -->
+   <LinearLayout
+       android:id="@+id/layoutSpace010"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+  
+   <!-- BACK -->
+  <LinearLayout
+       android:id="@+id/layout011"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+
+      
+	<Button
+          android:id="@+id/cmdBrowseControlReturn"
+          android:layout_width="50px"
+          android:layout_height="50px"
+          android:background="@drawable/minus" />
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/returnTxt"
+          android:text="\tReturn to main menu"
+          android:textSize="20px"
+          android:onClick="onClick"
+          android:clickable="true"
+          />  
+                 
+  </LinearLayout>
+    
+  
+</LinearLayout>

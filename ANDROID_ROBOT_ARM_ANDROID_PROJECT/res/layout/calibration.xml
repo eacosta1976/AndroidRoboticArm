@@ -1,0 +1,220 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maintableX"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/navy">
+   
+    <TableRow >
+		 <TextView 
+	          android:layout_height="10px"/>
+	</TableRow>	
+    
+    
+    <TableRow>
+      
+   <!-- BASE BUTTONS -->
+   <TableLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/subtableX"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" >
+		    <!-- HAND -->						
+			<TableRow >
+                  <Button
+			           android:id="@+id/cmdCalibrationHandOpen"
+			           android:layout_width="75px"
+			           android:layout_height="50px"
+			           android:background="@drawable/bullet2" />
+                  
+			       <TextView 
+			            android:id="@+id/handCal" 
+			           android:layout_width="170px"
+			           android:layout_height="wrap_content"
+			           android:text="Hand"
+			           android:textSize="20px"			        
+			           android:gravity="center_horizontal"
+			           android:textAppearance="?android:attr/textAppearanceLarge" />
+			       
+			       <Button
+			           android:id="@+id/cmdCalibrationHandClose"
+			           android:layout_width="75px"
+			           android:layout_height="50px"
+			           android:background="@drawable/bullet" />            
+			    
+           </TableRow>		
+           
+		   <TableRow >
+		        <TextView 
+	                 android:layout_height="10px"/>
+	       </TableRow>		
+			
+           <!-- WRIST -->
+		   <TableRow >
+		       
+		       <Button
+		           android:id="@+id/cmdCalibrationWristUp"
+		           android:layout_width="75px"
+				   android:layout_height="50px"
+				   android:background="@drawable/up" />
+		       
+		       <TextView 
+		            android:id="@+id/wristCal" 
+		            android:layout_width="170px"
+			        android:layout_height="wrap_content"
+			        android:text="Wrist"
+			        android:textSize="20px"			        
+			        android:gravity="center_horizontal"
+			        android:textAppearance="?android:attr/textAppearanceLarge" />
+		       
+		       <Button
+		           android:id="@+id/cmdCalibrationWristDown"
+		           android:layout_width="75px"
+			       android:layout_height="50px"
+			       android:background="@drawable/down"/>   
+    
+         </TableRow>	
+         
+		 <TableRow >
+		      <TextView 
+	             android:layout_height="10px"/>
+	     </TableRow>	  
+		   		
+      
+		 <!-- ELBOW -->   
+		 <TableRow >
+   	       <Button
+		           android:id="@+id/cmdCalibrationElbowUp"
+		           android:layout_width="75px"
+			       android:layout_height="50px"
+			       android:background="@drawable/up" />
+   	       
+		       <TextView
+		            android:id="@+id/elbowCal" 
+		            android:layout_width="170px"
+			        android:layout_height="wrap_content"
+			        android:text="Elbow"
+			        android:textSize="20px"			        
+			        android:gravity="center_horizontal"
+			        android:textAppearance="?android:attr/textAppearanceLarge" />	
+		       
+		       <Button
+		           android:id="@+id/cmdCalibrationElbowDown"
+		           android:layout_width="75px"
+			       android:layout_height="50px"
+			       android:background="@drawable/down"/>         
+        </TableRow>			
+			
+		 <TableRow >
+		      <TextView 
+	              android:layout_height="10px"/>
+	     </TableRow>	
+		 
+		 
+		<!-- SHOULDER -->	
+		<TableRow >		    
+ 	        <Button
+		           android:id="@+id/cmdCalibrationShoulderDown"
+		           android:layout_width="75px"
+			       android:layout_height="50px"
+			       android:background="@drawable/up"/>   
+ 	       
+		       <TextView 
+		           android:id="@+id/shoulderCal"
+		           android:layout_width="170px"
+			       android:layout_height="wrap_content"
+			       android:text="Shoulder"
+			       android:textSize="20px"			        
+			       android:gravity="center"
+			       android:textAppearance="?android:attr/textAppearanceLarge" />	
+		       
+		        <Button
+		           android:id="@+id/cmdCalibrationShoulderUp"
+		           android:layout_width="75px"
+			       android:layout_height="50px"
+			       android:background="@drawable/down" />
+    
+            </TableRow>					
+						
+		    <TableRow >
+		        <TextView 
+	                 android:layout_height="10px"/>
+	        </TableRow>	 
+		
+		
+			<!--  BASE -->			
+			<TableRow >
+       
+			       <Button
+			           android:id="@+id/cmdCalibrationBaseLeft"
+			           android:layout_width="75px"
+			           android:layout_height="50px"
+			           android:background="@drawable/left" />
+			       
+			       <TextView 
+			           android:id="@+id/baseCal"
+			           android:layout_width="170px"
+			           android:layout_height="wrap_content"
+			           android:text="Base"
+			           android:textSize="20px"
+					   android:layout_gravity="center_horizontal"			        
+			           android:textAppearance="?android:attr/textAppearanceLarge" />		
+			       
+			       <Button
+			           android:id="@+id/cmdCalibrationBaseRight"
+			           android:layout_width="75px"
+			           android:layout_height="50px"
+			           android:background="@drawable/right"/>      
+			    
+         </TableRow>
+    </TableLayout>     
+  </TableRow>
+  
+  <TableRow>
+		<TextView 
+	        android:layout_height="15px"/>
+  </TableRow>	
+	  
+   <TableRow>
+	    <TableLayout >
+ 			<TableRow >
+
+			      <Button
+			          android:id="@+id/cmdExecuteCalibration"
+			          android:layout_width="75px"
+			          android:layout_height="45px"
+			          android:layout_marginRight="20px"
+			          android:background="@drawable/bullet"/>	
+			     <TextView
+			       	android:id="@+id/CalRezeroRobot"
+			       	android:layout_height="wrap_content"
+			       	android:text="CALIBRATE"
+			       	android:textSize="20px"	
+			       	android:gravity="center"/>		
+            </TableRow>	       
+	    </TableLayout>
+	</TableRow>               
+  
+  <TableRow>
+		<TextView 
+	        android:layout_height="15px"/>
+  </TableRow>	
+   
+   <TableRow>
+	    <TableLayout >
+ 			<TableRow >
+     				<Button
+					    android:id="@+id/cmdCalibrationReturn"
+					    android:layout_width="75px"
+			            android:layout_height="45px"
+			            android:layout_marginRight="20px"
+			            android:background="@drawable/minus"/>	
+                   <TextView
+			       	    android:id="@+id/returnCal"
+			       	    android:layout_height="wrap_content"
+			       	    android:text="Return"
+			       	    android:textSize="20px"	
+			       	    android:gravity="center"/>		
+             </TableRow>	       
+	    </TableLayout>
+	</TableRow> 
+</TableLayout>

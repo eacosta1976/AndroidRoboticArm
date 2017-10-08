@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/navy"
+    android:orientation="vertical" >
+   
+     
+   <!-- BASE BUTTONS -->
+   <LinearLayout
+       android:id="@+id/layout50"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Base Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[-4 = 4]"/>
+       
+       <TextView
+           android:id="@+id/txtSecuenceBaseMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />            
+    
+  </LinearLayout>
+  
+    
+   <!-- SHOULDER BUTTONS -->
+   <LinearLayout
+       android:id="@+id/layout51"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+        <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Shoulder Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 4]"/>
+       
+       <TextView
+           android:id="@+id/txtSecuenceShoulderMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />    
+      
+  </LinearLayout>
+  
+   
+   <!-- ELBOW BUTTONS --> 
+   <LinearLayout
+       android:id="@+id/layout52"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Elbow Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 4]"/>
+       
+       <TextView
+           android:id="@+id/txtSecuenceElbowMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />              
+    
+  </LinearLayout>
+  
+   
+  <!-- WRIST BUTTONS -->  
+  <LinearLayout
+       android:id="@+id/layout53"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+      <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Wrist Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 5]"/>
+       
+       <TextView
+           android:id="@+id/txtSecuenceWristMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />             
+    
+  </LinearLayout> 
+  
+     
+  <!-- HAND --> 
+   <LinearLayout
+       android:id="@+id/layout54"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+      <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:text = "Hand Motor" />
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5"
+           android:gravity="center_horizontal" 
+           android:text = "Range[0 = 2]"/>
+       
+       <TextView
+           android:id="@+id/txtSecuenceHandMotor"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight = "0.5" />            
+    
+  </LinearLayout> 
+  
+    <!--  LAYOUT SPACE 0 -->
+   <LinearLayout
+       android:id="@+id/layoutSpace55"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+       <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal" 
+           android:text = "       "/>
+   
+   </LinearLayout>
+  
+   <!-- AUTOMATED SEQUENCE -->
+  <LinearLayout
+       android:id="@+id/layout56"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+      <Button
+          android:id="@+id/cmdExecuteSecuence"
+          android:layout_width="50px"
+          android:layout_height="50px"
+          android:background="@drawable/ok"/>
+      
+	<TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/execTxt"
+          android:text="\tExecute"
+          android:textSize="20px"
+          android:onClick="onClick"
+          android:clickable="true"
+          /> 
+   </LinearLayout>
+   
+  <!-- RETURN -->
+  <LinearLayout
+       android:id="@+id/layout57"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+      <Button
+          android:id="@+id/cmdReturnSecuence"
+          android:layout_width="50px"
+          android:layout_height="50px"
+          android:background="@drawable/minus" />
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/returnTxt"
+          android:text="\tReturn to main menu"
+          android:textSize="20px"
+          android:onClick="onClick"
+          android:clickable="true"
+          />  
+  </LinearLayout>
+ 
+</LinearLayout>
